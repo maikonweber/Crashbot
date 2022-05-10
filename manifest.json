@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name" : "MachineGold",
+    "version" : "0.1",
+    "description" : "MachineGold",
+    "permissions" : [
+        "storage"
+    ],
+    "action" : {
+        "default_title" : "MachineGold",
+        "default_popup" : "index.html"
+    },
+    "content_scripts" : [
+        {   
+            "matches" : [
+                "https://blaze.com/en/games/crash"
+        ],  
+            "js" : ["content.js"]
+        }
+    ],
+    "background" : [ {
+        "scripts" : ["background.js"]
+    }]
+}
