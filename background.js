@@ -1,6 +1,1 @@
-console.log("Rodando liso")
-
-chrome.browserAction.onClicked.addListener(function(tab) {
-    console.log("Rodando liso")
-
-});
+console.log('background.js loaded 1');

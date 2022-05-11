@@ -6,6 +6,9 @@
     "permissions" : [
         "storage"
     ],
+    "host_permissions" : [ 
+     "https://api.muttercorp.online/*"
+    ],
     "action" : {
         "default_title" : "MachineGold",
         "default_popup" : "index.html"
@@ -18,7 +21,7 @@
             "js" : ["content.js"]
         }
     ],
-    "background" : [ {
+    "background" :  {
         "scripts" : ["background.js"]
-    }]
+    }
 }
