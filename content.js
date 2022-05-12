@@ -13,7 +13,7 @@ function setInputValue(quantia, autoretiar) {
     let buttonGreyDouble = document.querySelectorAll('button')[4];
     let buttonRed = document.querySelectorAll('button')[5];
     
-    quantia.value = '100';
+    quantia.value = '2';
     buttonGreyDouble.click();
     buttonRed.click();
     return true;
