@@ -4,7 +4,7 @@
 // https://developer.chrome.com/extensions/content_scripts#host_permissions
 // https://developer.chrome.com/extensions/content_scripts#host_permissions#perm
 
-chrome.runtime.onMessage.addListener(getMessage);
+// chrome.runtime.onMessage.addListener(getMessage);
 
 
 function getMessage(message, sender, sendResponse) {
