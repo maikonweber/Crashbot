@@ -11,19 +11,12 @@ button.addEventListener('click', () => {
   let inputSend = input.value
   let autoSend = auto.value
   let textareaSend = textarea.value
-  console.log(inputSend);
-  console.log(autoSend);
-  console.log(textareaSend);
   chrome.runtime.sendMessage({
     action: "setInputValue",
     valor: inputSend,
     auto: autoSend,
     list: textareaSend
-    
-  }, function(response) {
-    console.log(response.msg);
-  }
-  );
+  });
   });
 
 
