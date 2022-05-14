@@ -8,7 +8,9 @@
         "storage"
     ],
     "host_permissions" : [ 
-     "https://api.muttercorp.online/*"
+     "https://api.muttercorp.online/*",
+     "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css",
+     "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     ],
     "action" : {
         "default_title" : "MachineGold",

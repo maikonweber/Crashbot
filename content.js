@@ -4,18 +4,14 @@
 // https://developer.chrome.com/extensions/content_scripts#host_permissions
 // https://developer.chrome.com/extensions/content_scripts#host_permissions#perm
 
-// chrome.runtime.onMessage.addListener(getMessage);
-
-
-function getMessage(message, sender, sendResponse) {
-    if (message.action == "enterTime") {
-        console.log(message);
-      
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    if (request.action == "EnterTime") {
+        alert("Enter Time");
     }
-}
+});
 
 
-function setInputValue(valor, cashour) {
+function setInputValue(valor, cashout) {
     let quantia = document.querySelectorAll('input')[0];
     let autoretirar = document.querySelectorAll('input')[1];
     let buttonGreyDouble = document.querySelectorAll('button')[4];
